@@ -21,6 +21,33 @@
     btn-primary"])!!}
     </div>
 </div>
+
+
+<!-- <div class="form-group required" id="form-name-error">
+    <label for="name" class="control-label col-md-3">Name</label>
+    <div class="col-md-6">
+        <input type="text" class="form-control required" id="focus" value="">
+        <span id="name-error" class="help-block"></span>
+    </div>
+</div>
+<div class="form-group required" id="form-unitprice-error">
+    <label for="unitprice" class="control-label col-md-3">Unit Price</label>
+    <div class="col-md-6">
+        <input type="text" class="form-control required">
+        <span id="unitprice-error" class="help-block"></span>
+    </div>
+</div>
+<div class="form-group">
+    <div class="col-md-6 col-md-push-3">
+        <a href="javascript:ajaxLoad('product/list')" class="btn btn-danger"><i
+                    class="glyphicon glyphicon-backward"></i>
+            Back</a>
+    <button type="submit" class="btn-primary">
+        <i class="glyphicon glyphicon-floppy-disk">Save</i>
+    </button>
+    </div>
+</div> -->
+
 <script>
     $("#frm").submit(function (event) {
         event.preventDefault();

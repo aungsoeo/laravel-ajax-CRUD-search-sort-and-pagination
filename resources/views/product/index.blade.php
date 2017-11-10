@@ -61,3 +61,26 @@
 </script>
 </body>
 </html>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    getData("showinvoice");
+});
+
+function getData(urlval){
+    $.ajax({    //create an ajax request to load_page.php
+        type: "GET",
+        url: urlval,            
+        dataType: "html",   //expect html to be returned                
+       success: function(data){                    
+           $(".output").html(data);
+            
+           $( ".output .pagination li a" ).click(function(e){
+                e.preventDefault();
+                getData($(this).attr('href'));
+            });
+
+       }
+    });
+}
+</script>
